@@ -956,6 +956,8 @@ public class SkroutzGreekStemmer {
         return len - 1;
       } else if (String.valueOf(s).startsWith("πασχαλιν")) {
         return len - 5;
+      } else if (String.valueOf(s).equals("βολαν"))
+        return len;
       } else {
         return len - 2;
       }
